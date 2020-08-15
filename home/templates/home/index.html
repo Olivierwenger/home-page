@@ -1,0 +1,53 @@
+{#{% load static %}#}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Olivier Wenger</title>
+
+  <!-- Bootstrap core CSS -->
+{#  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">#}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Olivier Wenger</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+            {% block content %}
+          {% endblock %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+{#  <script src="{% 'vendor/jquery/jquery.slim.min.js %}"></script>#}
+{#  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>#}
+
+</body>
+
+</html>

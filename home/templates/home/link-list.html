@@ -1,0 +1,18 @@
+{% extends 'home/index.html' %}
+{% load static %}
+{% block content %}
+{% if link_list %}
+    <ul class="collection">
+    {% for link in link_list %}
+
+        <a href="{{ link.link }}">
+            <li class="collection-item avatar"><img src="{% static link.image %}" alt="" class="circle">
+                <span>{{ link.text }}</span>
+            </li>
+        </a>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No link are available.</p>
+{% endif %}
+{% endblock %}
